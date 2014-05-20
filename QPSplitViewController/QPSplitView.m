@@ -24,11 +24,11 @@
         _splitController = splitController;
         CGRect bounds = self.bounds;
         _leftView = [[UIView alloc] initWithFrame:bounds];
-        _leftView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        _leftView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:_leftView];
         
         _rightView = [[UIView alloc] initWithFrame:bounds];
-        _rightView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        _rightView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
         [self addSubview:_rightView];
         
         // default 260 left size
